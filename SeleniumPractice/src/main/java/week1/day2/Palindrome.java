@@ -25,6 +25,7 @@ public class Palindrome {
 		  rev = rev + temp ;
 		   
 		}
+		
 		System.out.println("reversed Number:" + rev);
 		return rev;
 	}
