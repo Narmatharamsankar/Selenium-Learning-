@@ -78,14 +78,13 @@ public class PVRCinemas {
 		  
 		  e = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@aria-label ='Close this dialog']")));
 		  e.click();
+		
 		  
-		  
-		/*
-		 * e= wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-		 * "//button[text()='CANCEL']"))); e.click();
-		 */
-		  
-		  System.out.println("Title of the page -" + driver.getTitle() );
+		
+		  e= driver.findElement(By.xpath("//button[text()='CANCEL']"));
+		  driver.executeScript("arguments[0].click();", e);
+				  
+		 System.out.println("Title of the page -" + driver.getTitle() );
 		  
 	}
 
